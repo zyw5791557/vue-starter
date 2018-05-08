@@ -1,0 +1,80 @@
+@import '~scss_vars';
+
+/* 侧边导航栏 */
+
+.el-menu {
+    border-right: 0;
+    .el-menu-item {
+        text-align: left;
+        padding: 0!important;
+        span {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        & > i {
+            line-height: 44px;
+            width: 44px;
+            text-align: center;
+            color: $a-default-color;
+        }
+        i { color: $a-default-color; }
+    }
+}
+.el-menu--collapse {
+    width: 55px;
+    .el-tooltip { 
+        padding: 0!important;
+        text-align: center;
+     }
+}
+
+#header .el-input__inner {
+    background-color: $header-background-color;
+    border: 0;
+    color: #fff;
+}
+
+
+/* 面包屑 */
+
+.el-breadcrumb__separator {
+    color: $breadcrumb-color;
+}
+.el-breadcrumb__inner {
+    color: $breadcrumb-color;
+}
+
+
+/* 表单 */
+
+.el-form-item__label {
+    font-weight: 600;
+}
+
+/* Select 组件是否宽度 100% */
+// .el-select,
+// .el-date-editor.el-input, 
+// .el-date-editor.el-input__inner {
+//     width: 100%;
+// }
+
+.el-form-item {
+    margin-bottom: 15px;
+}
+
+.el-form--label-top .el-form-item__label {
+    padding: 0 0 0;
+}
+
+
+/* table */
+
+.el-table {
+    font-size: 12px!important;
+}
+
+
+/* 弹出层距离顶部的距离 */
+.el-dialog {
+    margin-top: 10vh!important;
+}
