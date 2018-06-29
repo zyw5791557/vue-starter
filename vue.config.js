@@ -16,10 +16,6 @@ module.exports = {
 	// 当设置为 `"error"` 时，检查出的错误会触发编译失败。
 	lintOnSave: true,
   
-	// 使用带有浏览器内编译器的完整构建版本
-	// 查阅 https://cn.vuejs.org/v2/guide/installation.html#运行时-编译器-vs-只包含运行时
-	compiler: false,
-  
 	// 调整内部的 webpack 配置。
 	// 查阅 https://github.com/vuejs/vue-doc-zh-cn/vue-cli/webpack.md
 	chainWebpack: config => {
@@ -40,10 +36,6 @@ module.exports = {
         }
     },
 	configureWebpack: () => {},
-  
-	// vue-loader 选项
-	// 查阅 https://vue-loader.vuejs.org/zh-cn/options.html
-	vueLoader: {},
   
 	// 是否为生产环境构建生成 source map？
 	productionSourceMap: true,
@@ -68,11 +60,6 @@ module.exports = {
 	// 在生产环境下为 Babel 和 TypeScript 使用 `thread-loader`
 	// 在多核机器下会默认开启。
 	parallel: require('os').cpus().length > 1,
-  
-	// 是否使用 `autoDLLPlugin` 分割供应的包？
-	// 也可以是一个在 DLL 包中引入的依赖的显性的数组。
-	// 查阅 https://github.com/vuejs/vue-doc-zh-cn/vue-cli/cli-service.md#dll-模式
-	dll: false,
   
 	// PWA 插件的选项。
 	// 查阅 https://github.com/vuejs/vue-doc-zh-cn/vue-cli-plugin-pwa/README.md
