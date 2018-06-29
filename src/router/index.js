@@ -6,7 +6,7 @@ const About = resolve => require(['@/views/About.vue'], resolve);
 
 Vue.use(Router);
 
-let routes =  [
+let routes = [
     {
         path: '/',
         name: 'home',
@@ -19,14 +19,13 @@ let routes =  [
     }
 ];
 
-
 const router = new Router({
-	mode: 'history',       // 需要后台配置支持
-	routes
+    mode: 'history', // 需要后台配置支持
+    routes
 });
 
 router.beforeEach((to, from, next) => {
-	next();
+    next();
 });
 
 export default router;
