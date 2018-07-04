@@ -1,5 +1,4 @@
-import * as types from './mutation-types';
-
+// import * as types from './mutation-types';
 
 /**
  * @function increment 增加数量

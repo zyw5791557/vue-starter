@@ -18,23 +18,7 @@ module.exports = {
   
 	// 调整内部的 webpack 配置。
 	// 查阅 https://github.com/vuejs/vue-doc-zh-cn/vue-cli/webpack.md
-	chainWebpack: config => {
-        if(process.env.NODE_ENV === 'production') {
-            config
-            .plugin('uglify')
-            .tap(([options]) => {
-                return [Object.assign(options, {
-                    uglifyOptions: {
-                        compress: {
-                            warnings: false,
-                            drop_console : true,
-                            drop_debugger: true
-                        }
-                    }
-                })]
-            })
-        }
-    },
+	chainWebpack: () => {},
 	configureWebpack: () => {},
   
 	// 是否为生产环境构建生成 source map？
